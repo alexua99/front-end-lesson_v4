@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section {
+            background-color: aqua;
+            /* 
+            px 
+            %
+            1vw =  1% від ширини єкрану
+            1vh =  1% від висоти єкрану
+            */
+            height: 100vh;
+        }
+
+        section:nth-child(2n) {
+            background-color: beige;
+        }
+
+        /* .title {
+            color: green;
+        } */
+
+        .cart {
+            width: 200px;
+            border: 1px solid blue;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        /* У тегу вага = 1000 */
+        #t1 {
+            color: blueviolet;
+        }
+
+        /* У тегу вага = 10 */
+        .title {
+            color: green;
+        }
+
+        /* У тегу вага = 0 + 1 */
+        h2 {
+            color: red !important;
+        }
+
+        h2 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrraper">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#t1">Title 1</a>
+                    </li>
+                    <li>
+                        <a href="#t2">Title 2</a>
+                    </li>
+                    <li>
+                        <a href="#t3">Title 3</a>
+                    </li>
+                    <li>
+                        <a href="#t4">Title 4</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <h2 id="t1" class="title">Title 1</h2>
+            <iframe src="https://www.tesla.com/" frameborder="0" width="100%" height="400"></iframe>
+        </section>
+        <section>
+            <h2 id="t2" class="title">Title 2</h2>
+        </section>
+        <section>
+            <h2 id="t3" class="title">Title 3</h2>
+            <iframe src="./form.html" frameborder="0" height="400"></iframe>
+        </section>
+        <section>
+            <h2 id="t4" class="title">Title 4</h2>
+            <div id="cart1" class="cart">
+                <img src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&quality=85&auto=format&fit=max&s=a52bbe202f57ac0f5ff7f47166906403"
+                    alt="" width="200">
+                <h3>Cart title</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque.
+                </p>
+                <button>buy</button>
+                <iframe src="./form.html" frameborder="0" height="400"></iframe>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2356.999588711366!2d30.514933408553393!3d50.49937751652581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d3b88d63f26b%3A0xe4179b9ba330dfbe!2z0JvQvtGC0J7Qmg!5e0!3m2!1sru!2sua!4v1680799195469!5m2!1sru!2sua"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+
+
+
+</body>
+
+</html>
