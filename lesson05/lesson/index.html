@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <section class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+
+                <!--
+                    Name:
+                    Field massage
+                -->
+
+                <form class="form" action="">
+                    <div class="form__field">
+                        <label for="inp1">
+                            <div>First name:</div>
+                            <input id="inp1" name="Name" type="text" placeholder="Name" required>
+                        </label>
+                    </div>
+                    <div class="form__field">
+                        <label for="inp2">
+                            <div>Last name:</div>
+                            <input id="inp2" name="Last name" type="text" placeholder="Last name" required>
+                        </label>
+                    </div>
+                    <div class="form__field">
+                        <label for="inp2">
+                            <div>Age:</div>
+                            <input id="inp2" name="Age" type="number" placeholder="Age" required>
+                        </label>
+                    </div>
+                    <div class="form__field">
+                        <label for="inp3">
+                            <div>E-Mail:</div>
+                            <input id="inp3" name="e-mail" type="email" placeholder="E-Mail" required>
+                        </label>
+                    </div>
+                    <div class="form__field">
+                        <label for="inp4">
+                            <div>Password:</div>
+                            <input id="inp4" name="password" type="password" placeholder="password" required>
+                        </label>
+                    </div>
+                    <div class="form__field" style="display: flex;">
+                        <label for="" class="radio">
+                            <div>Ч</div>
+                            <input name="radio" type="radio">
+                        </label>
+                        <label for="" class="radio">
+                            <div>Ж</div>
+                            <input name="radio" type="radio">
+                        </label>
+                    </div>
+                    <div class="form__field">
+                        <p>
+                            <input type="checkbox" required>
+                            Мені вже є 18 років
+                        </p>
+                        <p>
+                            <input type="checkbox" required>
+                            Яприймаю умови сайту
+                        </p>
+
+                    </div>
+                    <div class="form__field">
+                        <select name="country" id="sel1">
+                            <option value="UA">UA</option>
+                            <option value="DE">DE</option>
+                            <option value="FR">FR</option>
+                        </select>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+    <script>
+        let select = document.querySelector('#sel1')
+
+        select.onchange = () => {
+            console.log(select.value);
+        }
+    </script>
+</body>
+
+</html>
