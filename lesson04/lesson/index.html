@@ -5,9 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
 
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
         section {
             background-color: aqua;
             /* 
@@ -46,20 +55,46 @@
 
         /* У тегу вага = 0 + 1 */
         h2 {
-            color: red !important;
+            color: red;
         }
 
         h2 {
             color: blue;
+        }
+
+        .line {
+            width: 100px;
+            height: 0px;
+            border: 1px solid #2C4058;
+            margin: 0 auto 30px;
+        }
+
+        .test-title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 54px;
+
+            text-align: center;
+
+            color: #2C4058;
+            margin-bottom: 90px;
+        }
+
+        .header__nav {
+            display: flex;
+            gap: 40px;
+            list-style-type: none;
         }
     </style>
 </head>
 
 <body>
     <div class="wrraper">
-        <header>
+        <header class="header">
             <nav>
-                <ul>
+                <ul class="header__nav">
                     <li>
                         <a href="#t1">Title 1</a>
                     </li>
@@ -77,10 +112,26 @@
         </header>
         <section class="hero">
             <h2 id="t1" class="title">Title 1</h2>
-            <iframe src="https://www.tesla.com/" frameborder="0" width="100%" height="400"></iframe>
+            <div class="line"></div>
+            <h2 class="test-title">WHAT WE DO</h2>
+            <div class="container">
+                <div class="hero__item">
+                    <img src="" alt="">
+                    <div class="hero__content">
+                        <h5>ONE WORLD</h5>
+                        <h4>TRADE CENTER</h4>
+                        <p>
+                            Increasing prosperity in our lives can be accomplished by having the right frame of mind.
+                            The truth is, our thoughts are very powerful.
+                        </p>
+                        <a href="">MORE DETAILS</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
-            <h2 id="t2" class="title">Title 2</h2>
+            <h2 class="test-title">WHAT WE DO</h2>
+
         </section>
         <section>
             <h2 id="t3" class="title">Title 3</h2>
