@@ -1,0 +1,10 @@
+:root {
+    --red-color: red;
+
+    --button-font-size: 20px;
+}
+
+h2 {
+    color: var(--red-color);
+    font-size: var(--button-font-size);
+}

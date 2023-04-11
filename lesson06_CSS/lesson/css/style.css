@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: red;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    padding: 50px 10px 10px;
+    /* margin-bottom: 30px; */
+    /* margin: 0 0 30px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Тег = 0 */
+h1 {}
+
+/* Класс = 10 */
+.title {}
+
+/* ID = 1000 */
+#t1 {}
+
+
+/* important = ~ */
+h1 {
+    color: beige !important;
+}
+
+/* відступ це звернення в середені */
+.hero .hero__title {
+    color: aqua;
+}
+
+/* звернення на одному рівні */
+.hero.hero--main {
+    background-color: rgb(5, 20, 20);
+}
+
+/* лайвхак для набору ваги */
+.hero__title.hero__title.hero__title.hero__title {
+    color: blueviolet;
+}
+
+.hero__title {
+    color: blueviolet;
+}
+
+
+/* Dispaly model */
+.hero__title {
+    /* Dispaly model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background */
+    background-image: url('test');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    border: 3px solid green;
+    border-radius: 20px;
+    outline: none;
+
+    /* text */
+    cursor: pointer;
+    color: blue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+
+    /* spasing */
+
+    /* Внутрішній відступ */
+    padding: 10px;
+    /* Зовняшній відступ */
+    margin: 10px;
+
+    /* Ширина */
+    width: 100px;
+
+    /* Висота */
+    height: 100px;
+
+    /* 1vw = 1% від ширини єкрану */
+    /* 1vh = 1% від висоти єкрану */
+
+}
