@@ -1,0 +1,185 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Reset End */
+
+
+/* Variable */
+:root {
+    /* fonts */
+    --main-fonts: 'Open Sans', sans-serif;
+
+    /* colors */
+    --color-grey: #828282;
+    --color-black: #070707;
+}
+
+/* Variable End */
+
+/* Global style */
+body {
+    font-family: var(--main-fonts);
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    border-radius: 10px;
+    height: 2px;
+    background-color: var(--color-grey);
+    margin: 10px auto;
+}
+
+/* Global style end */
+
+/* Header */
+.header__link {
+    color: var(--color-grey);
+}
+
+.header__menu {
+    border-bottom: 1px solid var(--color-grey);
+}
+
+/* Звернення до класу в середені 90% */
+.header .container {
+    max-width: 480px;
+}
+
+/* Звернення до класу на одній лінії */
+.header.header--buy {
+    background-color: red;
+}
+
+/* Звернення до класу прямий нащадок */
+.header>.container {
+    background-color: rgb(52, 101, 63);
+}
+
+/* Звернення до першого классу який під єлементом */
+.header__menu+.box {
+    color: red;
+}
+
+/* Звернення до всіх классів який під єлементом */
+.header__menu~.box {
+    color: red;
+}
+
+
+
+/* Приклад */
+.header__menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+
+}
+
+.header__gam-menu {
+    display: none;
+}
+
+.header__gam-menu:checked~.header__menu {
+    max-height: 2000px;
+    transition: max-height 1s;
+}
+
+/* Псевдо Єлемнти */
+
+/* .icon:after {
+    content: "Після";
+}
+
+.icon::before {
+    content: "Перед";
+} */
+.icon {
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.icon:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: rgb(68, 0, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+}
+
+/* Псевдо Єлемнти приклад */
+
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin: 20px;
+    transition: all .8s;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.box:hover {
+    border-radius: 50px;
+    transform: scale(1.7);
+    background-color: rgb(255, 0, 251);
+}
+
+.box:first-child {
+    background-color: black;
+}
+
+.box:last-child {
+    background-color: aquamarine;
+}
+
+.box:nth-child(2n) {
+    background-color: #828282;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+p:last-child {
+    margin-bottom: 0px;
+}
