@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            font-size: 0;
+            background-color: aqua;
+            padding: 10px;
+            width: 400px;
+        }
+
+        .box {
+            border: 2px solid;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            display: inline-block;
+
+            /* opacity: 0; */
+            /* visibility: visible; */
+        }
+
+        .box:nth-child(2n) {
+            background-color: red;
+        }
+
+        span {
+            display: block;
+        }
+
+        .b-1 {
+            width: 33.333%;
+        }
+
+        .b-2 {
+            width: 33.333%;
+        }
+
+        .b-3 {
+            width: 33.333%;
+        }
+
+        .b-4 {
+            width: 70%;
+        }
+
+        .b-5 {
+            width: 30%;
+        }
+
+        .b-6 {
+            width: 50%;
+        }
+
+        .b-7 {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="box b-1">12</div>
+        <div class="box b-2">12</div>
+        <div class="box b-3">12</div>
+        <div class="box b-4">12</div>
+        <div class="box b-5">12</div>
+        <div class="box b-6">12</div>
+        <div class="box b-7">12</div>
+    </div>
+</body>
+
+</html>
