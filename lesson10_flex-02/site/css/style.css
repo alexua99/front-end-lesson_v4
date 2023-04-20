@@ -1,0 +1,126 @@
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    outline: none;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+:root {
+    /* fonts */
+    --main-fonts: 'Montserrat', sans-serif;
+
+    /* Colors */
+    --color-black: #2F281E;
+    --color-orange: #FF9900;
+    --color-white: #fff;
+    --color-border: #BCD0E5;
+
+    --color-btn-hover: #d28005;
+
+    /* font-weight: 600; font-size: 16px;/line-height: 20px; font-family:*/
+    --btn-fonts: 600 16px/20px var(--main-fonts);
+    --link-fonts: 400 15px/20px var(--main-fonts);
+
+    /* spasing */
+    --r-4: 4px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.link {
+    font: var(--link-fonts);
+    color: var(--color-black);
+}
+
+.link:hover {
+    color: var(--color-orange);
+}
+
+.btn {
+    font: var(--btn-fonts);
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: var(--r-4);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--color-btn-hover);
+}
+
+.btn--line {
+    color: var(--color-black);
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+}
+
+.btn--line:hover {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border: 1px solid transparent;
+}
+
+
+/* Header */
+.header {
+    padding: 17px 0;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+
+/* Header End */
