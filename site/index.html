@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="container header__row">
+                <a class="header__logo" href="/">
+                    <img class="logo" src="./img/Logo.svg" alt="logo">
+                </a>
+                <!-- nav -->
+                <nav class="header__nav">
+                    <ul class="header__nav-container">
+                        <li class="header__nav-item">
+                            <a class="link" href="/">Product</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="link" href="/">Customers</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="link" href="/">Pricing</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="link" href="/">Resources</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- nav end -->
+                <div class="header__btn-container">
+                    <button id="btnLogin" class="btn btn--line">Sign In</button>
+                    <button class="btn">Sign Up</button>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- hero -->
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="title hero__title">The Design Thinking superpowers</h1>
+                <img class="hero__img" src="./img/main-img.png" alt="img" width="200">
+                <p class="text hero__text">Tools, tutorials, design and innovation experts, all in one place! The most
+                    intuitive
+                    way to imagine your next user experience.</p>
+                <button class="btn">Get started</button>
+            </div>
+        </section>
+        <!-- hero end -->
+
+
+        <div class="modal">
+            <div class="form-login">
+                <div class="form-login__close">X</div>
+                <h2>Login</h2>
+                <input class="inp" type="text" placeholder="Name">
+                <input class="inp" type="password">
+                <button class="btn">Login</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelector('#btnLogin').onclick = () => {
+            document.querySelector('.modal').classList.add('visible')
+        }
+        document.querySelector('.form-login__close').onclick = () => {
+            document.querySelector('.modal').classList.remove('visible')
+        }
+    </script>
+</body>
+
+</html>
