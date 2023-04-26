@@ -48,6 +48,7 @@ img {
 
     /* spasing */
     --r-4: 4px;
+    --header-top: 80px;
 }
 
 body {
@@ -80,10 +81,25 @@ body {
 .link {
     font: var(--link-fonts);
     color: var(--color-black);
+    display: flex;
+    gap: 4px;
+    transition: transform 0.6s;
 }
 
 .link:hover {
     color: var(--color-orange);
+}
+
+.link:hover .link--arrow {
+    transform: scaleY(1);
+}
+
+.link--arrow {
+    transform: scaleY(-1);
+    width: 15px;
+    height: 20px;
+    display: block;
+    transition: transform 0.6s;
 }
 
 .btn {
@@ -168,7 +184,14 @@ body {
 
 /* Header */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 17px 0;
+    z-index: 30;
+    width: 100%;
+    background-color: var(--color-white);
+    box-shadow: -4px 6px 17px -8px rgba(0, 0, 0, 0.75);
 }
 
 .header__row {
@@ -179,19 +202,69 @@ body {
 }
 
 .header__nav-container {
-    display: flex;
+    display: none;
     justify-content: space-between;
     gap: 20px;
+
 }
 
 .header__btn-container {
-    display: flex;
+    display: none;
     gap: 32px;
+}
+
+.header__nav-item {
+    position: relative;
+}
+
+.header__nav-item:hover .header__drop-down {
+    max-height: 2000px;
+}
+
+.header__drop-down {
+    position: absolute;
+    background: var(--color-white);
+    width: 100%;
+    contain: paint;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-height: 0;
+    transition: max-height 0.5s;
+}
+
+.header__gamb {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+}
+
+.header__gamb-line {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background-color: var(--color-black);
+}
+
+.header__gamb-line--top {
+    top: 10px;
+}
+
+.header__gamb-line--bottom {
+    top: 30px;
 }
 
 /* Header End */
 
 /* Hero */
+.hero {
+    padding: var(--header-top) 0 0;
+}
+
 .hero__title {
     margin-bottom: 30px;
     max-width: 500px;
