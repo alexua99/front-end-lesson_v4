@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .row {
+            display: grid;
+            grid-template-columns: minmax(10px, 90px) repeat(2, 100px) 50px 1fr;
+            /* min    max */
+            grid-template-columns: minmax(100px, 700px);
+            grid-gap: 10px;
+        }
+
+        .box {
+            background-color: black;
+            color: #FFF;
+            height: 100px;
+            font-size: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:nth-child(2n) {
+            background-color: rgb(37, 26, 187);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">6</div>
+        <div class="box">6</div>
+        <div class="box">6</div>
+    </div>
+</body>
+
+</html>
