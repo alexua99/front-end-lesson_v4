@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .section {
+            background-color: black;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .planet,
+        .arrow {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 1000px;
+        }
+
+        .planet {
+            bottom: -200px;
+            right: -200px;
+        }
+
+        .arrow {
+            bottom: 100px;
+            right: 300px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <h1>
+                Lorem, ipsum dolor.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ex.</p>
+            <button>Start</button>
+
+            <img class="planet box" data-speed="0.1" src="./planet.png" alt="">
+            <img class="arrow box" data-speed="0.2" src="./cursor.png" alt="">
+
+        </div>
+    </div>
+
+    <script>
+
+        let wrap = document.querySelector('.section')
+
+        let speed = 0;
+
+        function paralax(event) {
+            let height = wrap.offsetHeight / 2;
+            this.querySelectorAll('.box').forEach(par => {
+                speed = par.getAttribute('data-speed')
+                par.style.transform = `translate(${(event.clientX - height) * speed / 10}px, ${(event.clientY - height) * speed / 10}px)`;
+            })
+        }
+
+        wrap.addEventListener("mousemove", paralax)
+
+
+    </script>
+</body>
+
+</html>
