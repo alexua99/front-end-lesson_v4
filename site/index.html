@@ -114,6 +114,10 @@
         </section>
         <!-- product end -->
 
+        <section>
+
+        </section>
+
 
 
         <div class="modal">
@@ -129,6 +133,16 @@
 
 
     <script>
+
+        let menuButton = document.querySelector('.header__gamb')
+
+        menuButton.onclick = () => {
+            document.querySelector('.header__nav').classList.toggle('active')
+        }
+
+
+
+
         document.querySelector('#btnLogin').onclick = () => {
             document.querySelector('.modal').classList.add('visible')
         }

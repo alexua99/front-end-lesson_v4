@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper {
+            overflow: hidden;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        button {
+            background-color: aquamarine;
+            padding: 20px 40px;
+            border-radius: 20px;
+            display: block;
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+
+            border-radius: 40px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        img {
+            max-width: 400px;
+            margin-left: 50px;
+        }
+
+        /* Десктоп -----------> */
+        @media (max-width: 991px) {
+
+            .container {
+
+                position: relative;
+
+            }
+
+            img {
+                position: absolute;
+                left: 50%;
+                top: 60px;
+                transform: translateX(-50%);
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            h1 {
+                margin-bottom: 370px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <section class="hero">
+            <div class="container">
+                <div class="content">
+                    <h1>Lorem, ipsum.</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quasi!</p>
+                    <button>start</button>
+                </div>
+                <img src="https://images.prom.ua/1239818217_enoty-soderzhanie-i.jpg" alt="" width="400px">
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

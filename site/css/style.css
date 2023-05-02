@@ -57,7 +57,7 @@ img {
 @media (max-width: 992px) {
     :root {
         --title-fonts: 700 34px/44px var(--main-fonts);
-
+        --link-fonts: 700 20px/20px var(--main-fonts);
     }
 }
 
@@ -65,6 +65,7 @@ img {
     :root {
         --title-fonts: 700 29px/44px var(--main-fonts);
         --sub-title-fonts: 700 25px/39px var(--main-fonts);
+
     }
 }
 
@@ -74,6 +75,10 @@ body {
 }
 
 .wrapper {
+    overflow: hidden;
+}
+
+.fix-body {
     overflow: hidden;
 }
 
@@ -282,6 +287,7 @@ body {
     width: 40px;
     height: 1px;
     background-color: var(--color-black);
+    transition: transform 0.6s;
 }
 
 .header__gamb-line--top {
@@ -331,8 +337,6 @@ body {
     padding: 167px 10px 196px;
 }
 
-
-
 /* Hero End */
 /* Product */
 .product {
@@ -379,8 +383,42 @@ body {
 /* Tab version */
 
 @media (max-width: 992px) {
-    .container {
-        padding: 0 30px;
+    .header__nav.active .header__nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        background-color: var(--color-white);
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+
+    }
+
+
+
+    .header__nav.active .header__gamb-line--middle {
+        width: 0;
+    }
+
+    .header__nav.active .header__gamb-line--top {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .header__nav.active .header__gamb-line--bottom {
+        transform: rotate(135deg) translate(-8px, 7px);
+    }
+
+    .header__drop-down {
+        position: static;
+        height: 0;
+    }
+
+    .header__nav-item:hover .header__drop-down {
+        height: auto;
     }
 
     .header__gamb {
@@ -424,6 +462,8 @@ body {
 mobail */
 
 @media (max-width: 767px) {
+
+
     .btn {
         margin: 0 auto;
         width: 100%;
