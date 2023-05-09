@@ -1,5 +1,9 @@
 /* font-family: 'Montserrat', sans-serif; */
 
+html {
+    font-size: 1px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -39,32 +43,32 @@ img {
     --color-simpl-text: #544837;
     --color-btn-hover: #d28005;
 
-    /* font-weight: 600; font-size: 16px;/line-height: 20px; font-family:*/
-    --title-fonts: 700 44px/54px var(--main-fonts);
-    --sub-title-fonts: 700 36px/44px var(--main-fonts);
-    --h3-fonts: 600 22px/44px var(--main-fonts);
-    --simple-text-fonts: 500 16px/26px var(--main-fonts);
-    --hero-text-fonts: 400 18px/28px var(--main-fonts);
-    --text-fonts: 500 16px/26px var(--main-fonts);
-    --btn-fonts: 600 16px/20px var(--main-fonts);
-    --link-fonts: 400 15px/20px var(--main-fonts);
+    /* font-weight: 600; font-size: 16rem;/line-height: 20rem; font-family:*/
+    --title-fonts: 700 44rem/54rem var(--main-fonts);
+    --sub-title-fonts: 700 36rem/44rem var(--main-fonts);
+    --h3-fonts: 600 22rem/44rem var(--main-fonts);
+    --simple-text-fonts: 500 16rem/26rem var(--main-fonts);
+    --hero-text-fonts: 400 18rem/28rem var(--main-fonts);
+    --text-fonts: 500 16rem/26rem var(--main-fonts);
+    --btn-fonts: 600 16rem/20rem var(--main-fonts);
+    --link-fonts: 400 15rem/20rem var(--main-fonts);
 
     /* spasing */
-    --r-4: 4px;
-    --header-top: 80px;
+    --r-4: 4rem;
+    --header-top: 80rem;
 }
 
 @media (max-width: 992px) {
     :root {
-        --title-fonts: 700 34px/44px var(--main-fonts);
-        --link-fonts: 700 20px/20px var(--main-fonts);
+        --title-fonts: 700 34rem/44rem var(--main-fonts);
+        --link-fonts: 700 20rem/20rem var(--main-fonts);
     }
 }
 
 @media (max-width: 767px) {
     :root {
-        --title-fonts: 700 29px/44px var(--main-fonts);
-        --sub-title-fonts: 700 25px/39px var(--main-fonts);
+        --title-fonts: 700 29rem/44rem var(--main-fonts);
+        --sub-title-fonts: 700 25rem/39rem var(--main-fonts);
 
     }
 }
@@ -83,13 +87,13 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1200rem;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 10rem;
 }
 
 .logo {
-    width: 120px;
+    width: 120rem;
 }
 
 .title {
@@ -111,17 +115,17 @@ body {
 
 .inp {
     display: block;
-    border: 1px solid var(--color-border);
-    padding: 10px;
-    height: 50px;
-    border-radius: 4px;
+    border: 1rem solid var(--color-border);
+    padding: 10rem;
+    height: 50rem;
+    border-radius: 4rem;
 }
 
 .link {
     font: var(--link-fonts);
     color: var(--color-black);
     display: flex;
-    gap: 4px;
+    gap: 4rem;
     transition: transform 0.6s;
 }
 
@@ -135,8 +139,8 @@ body {
 
 .link--arrow {
     transform: scaleY(-1);
-    width: 15px;
-    height: 20px;
+    width: 15rem;
+    height: 20rem;
     display: block;
     transition: transform 0.6s;
 }
@@ -148,9 +152,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 22px;
+    padding: 12rem 22rem;
     border-radius: var(--r-4);
-    border: 1px solid transparent;
+    border: 1rem solid transparent;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -162,13 +166,13 @@ body {
 .btn--line {
     color: var(--color-black);
     background-color: transparent;
-    border: 1px solid var(--color-border);
+    border: 1rem solid var(--color-border);
 }
 
 .btn--line:hover {
     color: var(--color-white);
     background-color: var(--color-orange);
-    border: 1px solid transparent;
+    border: 1rem solid transparent;
 }
 
 /* Modal */
@@ -192,7 +196,7 @@ body {
 }
 
 .visible .form-login {
-    transform: translateX(0px);
+    transform: translateX(0rem);
     opacity: 1;
     transition: all .5s;
 }
@@ -200,23 +204,23 @@ body {
 .form-login {
     background-color: var(--color-white);
     width: 100%;
-    max-width: 350px;
-    padding: 30px;
-    border: 1px solid;
-    border-radius: 20px;
+    max-width: 350rem;
+    padding: 30rem;
+    border: 1rem solid;
+    border-radius: 20rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20rem;
     position: relative;
-    transform: translateX(-300px);
+    transform: translateX(-300rem);
     opacity: 0;
     transition: all .5s;
 }
 
 .form-login__close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 20rem;
+    right: 20rem;
     cursor: pointer;
 }
 
@@ -226,30 +230,30 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 17px 0;
+    padding: 17rem 0;
     z-index: 30;
     width: 100%;
     background-color: var(--color-white);
-    box-shadow: -4px 6px 17px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -4rem 6rem 17rem -8rem rgba(0, 0, 0, 0.75);
 }
 
 .header__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 20rem;
 }
 
 .header__nav-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 20rem;
 
 }
 
 .header__btn-container {
     display: flex;
-    gap: 32px;
+    gap: 32rem;
 }
 
 .header__nav-item {
@@ -257,7 +261,7 @@ body {
 }
 
 .header__nav-item:hover .header__drop-down {
-    max-height: 2000px;
+    max-height: 2000rem;
 }
 
 .header__drop-down {
@@ -267,35 +271,35 @@ body {
     contain: paint;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10rem;
 
     max-height: 0;
     transition: max-height 0.5s;
 }
 
 .header__gamb {
-    width: 40px;
-    height: 40px;
+    width: 40rem;
+    height: 40rem;
     display: none;
     position: relative;
 }
 
 .header__gamb-line {
     position: absolute;
-    top: 20px;
+    top: 20rem;
     left: 0;
-    width: 40px;
-    height: 1px;
+    width: 40rem;
+    height: 1rem;
     background-color: var(--color-black);
     transition: transform 0.6s;
 }
 
 .header__gamb-line--top {
-    top: 10px;
+    top: 10rem;
 }
 
 .header__gamb-line--bottom {
-    top: 30px;
+    top: 30rem;
 }
 
 /* Header End */
@@ -306,26 +310,26 @@ body {
 }
 
 .hero__content {
-    max-width: 500px;
+    max-width: 500rem;
     position: relative;
 }
 
 .hero__title {
-    margin-bottom: 30px;
+    margin-bottom: 30rem;
 
 }
 
 .hero__text {
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
 
     font: var(--hero-text-fonts);
 }
 
 .hero__img {
-    max-width: 644px;
+    max-width: 644rem;
     width: 140%;
     position: absolute;
-    right: -700px;
+    right: -700rem;
 
     top: 50%;
     transform: translateY(-50%);
@@ -334,13 +338,13 @@ body {
 
 .hero__container {
     position: relative;
-    padding: 167px 10px 196px;
+    padding: 167rem 10rem 196rem;
 }
 
 /* Hero End */
 /* Product */
 .product {
-    padding: 100px 0 50px;
+    padding: 100rem 0 50rem;
     background-image: url(../img/bg.png);
     background-size: cover;
     background-position: bottom center;
@@ -355,26 +359,26 @@ body {
 
 .product__title {
     text-align: center;
-    max-width: 540px;
-    margin: 0 0 50px;
+    max-width: 540rem;
+    margin: 0 0 50rem;
 
 }
 
 .product__icon {
-    width: 50px;
-    margin: 0 0 30px;
+    width: 50rem;
+    margin: 0 0 30rem;
 }
 
 .product__item-title {
-    margin: 0 0 16px;
+    margin: 0 0 16rem;
 }
 
 .product__row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 20rem;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 70rem;
 }
 
 /* Product End */
@@ -388,7 +392,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 30rem;
         position: absolute;
         background-color: var(--color-white);
         left: 0;
@@ -405,11 +409,11 @@ body {
     }
 
     .header__nav.active .header__gamb-line--top {
-        transform: rotate(45deg) translate(6px, 6px);
+        transform: rotate(45deg) translate(6rem, 6rem);
     }
 
     .header__nav.active .header__gamb-line--bottom {
-        transform: rotate(135deg) translate(-8px, 7px);
+        transform: rotate(135deg) translate(-8rem, 7rem);
     }
 
     .header__drop-down {
@@ -434,27 +438,27 @@ body {
     }
 
     .hero__img {
-        max-width: 414px;
+        max-width: 414rem;
         transform: translateY(-51%);
         z-index: -1;
-        right: -420px;
+        right: -420rem;
     }
 
 
 
     .hero__content {
-        max-width: 320px;
+        max-width: 320rem;
         position: relative;
     }
 
     .hero__container {
 
-        padding: 67px 30px 56px;
+        padding: 67rem 30rem 56rem;
     }
 
     .product__row {
         grid-template-columns: repeat(2, 1fr);
-        gap: 70px 20px;
+        gap: 70rem 20rem;
     }
 }
 
@@ -471,7 +475,7 @@ mobail */
 
     .hero__container {
 
-        padding: 40px 30px;
+        padding: 40rem 30rem;
     }
 
     .hero__img {
@@ -484,7 +488,7 @@ mobail */
 
     .hero__title {
         text-align: center;
-        margin-bottom: 16px;
+        margin-bottom: 16rem;
     }
 
     .hero__text {
