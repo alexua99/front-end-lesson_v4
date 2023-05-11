@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            border: none;
+            padding: 10px;
+            outline: none;
+            background: transparent;
+        }
+
+        input:focus+.form__label {
+            top: -15px;
+            transform: scale(0.8);
+            background: #fff;
+            padding: 5px;
+
+        }
+
+        .form__item {
+            border: 1px solid;
+            margin-bottom: 30px;
+            width: 100%;
+            border-radius: 30px;
+            position: relative;
+
+        }
+
+        .form__label {
+            position: absolute;
+            left: 10px;
+            top: 8px;
+            transition: all 0.3s;
+        }
+
+        .wrapper {
+            width: 300px;
+
+        }
+
+        .form {
+            padding: 20px 40px;
+            border: 1px solid blue;
+            border-radius: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .form__chack {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .form__chack input {
+            width: 20px;
+        }
+
+        section {
+            border: 1px solid;
+            padding: 60px 0;
+        }
+
+        .baner {
+            background: red;
+            padding: 60px 0;
+        }
+
+        section+.baner {
+            padding: 10px 0;
+        }
+
+        section>div {
+            padding: 40px;
+        }
+
+        .header>.title {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <form action="" class="form">
+
+            <h2>Form title</h2>
+
+            <div class="form__item">
+                <input id="inp1" type="text" required>
+                <span class="form__label">Name</span>
+
+            </div>
+            <div class="form__item">
+                <input type="password" required>
+                <span class="form__label">Password</span>
+            </div>
+            <div class="form__chack">
+                <input type="checkbox" required>
+
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptatem?</span>
+            </div>
+
+            <button class="button" type="submit">Send</button>
+        </form>
+    </div>
+    <div class="baner">test</div>
+    <div class="main">
+        <section>
+            <h2>Test</h2>
+            <p>par</p>
+        </section>
+        <section class="header">
+            <h2 class="title">dfasdasdas</h2>
+            <div class="container">
+
+                <h2 class="title">dfasdasdas</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, rerum.
+                <div class="cart">
+                    Lorem ipsum dolor sit amet.
+                    <h2 class="title">dfasdasdas</h2>
+                </div>
+
+            </div>
+        </section>
+        <section>test</section>
+        <div class="baner">test</div>
+        <section>test</section>
+        <section>test</section>
+        <section>test</section>
+        <section>test</section>
+        <section>test</section>
+    </div>
+
+
+
+    <script>
+        let inp = document.querySelector('#inp1')
+
+
+        inp.onchange = () => {
+            if (inp.value) {
+                inp.classList.add('active')
+            } else {
+                inp.classList.remove('active')
+            }
+        }
+    </script>
+</body>
+
+</html>
