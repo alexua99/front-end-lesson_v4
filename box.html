@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .field__box {
+            width: 20px;
+            height: 20px;
+            border-radius: 13px;
+            border: 1px solid #31AF91;
+        }
+
+        .field__box svg {
+            display: none;
+        }
+
+        .field__input {
+            display: none;
+        }
+
+        .field__input:checked+.field__box svg {
+            display: block;
+        }
+
+        .field__input:checked~p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="field">
+        <label for="inp">
+            <input class="field__input" type="checkbox" name="" id="inp">
+            <div class="field__box">
+                <svg id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #31AF91;
+                        }
+
+                        .st1 {
+                            fill: #FFFFFF;
+                        }
+                    </style>
+                    <g>
+                        <circle class="st0" cx="64" cy="64" r="64" />
+                    </g>
+                    <g>
+                        <path class="st1"
+                            d="M54.3,97.2L24.8,67.7c-0.4-0.4-0.4-1,0-1.4l8.5-8.5c0.4-0.4,1-0.4,1.4,0L55,78.1l38.2-38.2   c0.4-0.4,1-0.4,1.4,0l8.5,8.5c0.4,0.4,0.4,1,0,1.4L55.7,97.2C55.3,97.6,54.7,97.6,54.3,97.2z" />
+                    </g>
+
+
+                </svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, sint!</p>
+        </label>
+    </div>
+
+
+    <select name="" id="">
+        <option value="1">1</option>
+        <option value="1">1</option>
+        <option value="1">1</option>
+        <option value="1">1</option>
+        <option value="1">1</option>
+        <option value="1">1</option>
+    </select>
+</body>
+
+</html>
