@@ -173,6 +173,7 @@ body {
     color: var(--color-white);
     background-color: var(--color-orange);
     border: 1rem solid transparent;
+
 }
 
 /* Modal */
@@ -223,6 +224,28 @@ body {
     right: 20rem;
     cursor: pointer;
 }
+
+
+/* animation */
+@keyframes img-bg {
+    0% {
+        top: 50%;
+
+    }
+
+
+
+    50% {
+        top: 40%;
+    }
+
+
+
+    100% {
+        top: 50%;
+    }
+}
+
 
 
 /* Header */
@@ -334,6 +357,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
+    animation: img-bg 7s infinite;
 }
 
 .hero__container {
